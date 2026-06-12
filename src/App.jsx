@@ -84,7 +84,6 @@ function getDiaperSize(pos) {
    🔐 SENHA ADMIN — vem do .env, nunca do código
 ───────────────────────────────────────────── */
 const ADMIN_PASS = import.meta.env.VITE_ADMIN_PASSWORD;
-console.log("A senha que o site leu é:", ADMIN_PASS);
 
 /* ─────────────────────────────────────────────
    🖼 ÍCONES SVG
