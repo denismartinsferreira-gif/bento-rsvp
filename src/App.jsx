@@ -223,13 +223,13 @@ function RSVPPage({ onDone }) {
         <h2 style={{ ...S.cardTitle, fontFamily:"'Inter',sans-serif" }}>Que alegria, {firstName}!</h2>
         <p style={{ ...S.cardText, fontFamily:"'Inter',sans-serif" }}>
           Estamos <em>ansiosamente</em> aguardando esse dia tão especial.<br/>
-          Mal podemos esperar para te ver por aqui! 💛
+          Mal podemos esperar para te ver por aqui! 🩵
         </p>
 
-        {diaperInfo && (
+{diaperInfo && (
           <div style={S.diaperBox}>
-            <p style={S.diaperLabel}>☁️ Sugestão de presente</p>
-            <p style={{ ...S.cardText, margin:"0 0 12px", fontSize:13 }}>
+            <p style={{ ...S.diaperLabel, textAlign: "center" }}>🧸 Sugestão de Presentes 🎁</p>
+            <p style={{ ...S.cardText, margin:"0 0 12px", fontSize:13, textAlign: "center" }}>
               Se quiser nos presentear, sugerimos o kit:
             </p>
             
@@ -239,7 +239,7 @@ function RSVPPage({ onDone }) {
                 <span style={{ fontSize: 26 }}>☁️</span>
                 <div style={{ textAlign: "left" }}>
                   <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
-                    Pacote de fralda {diaperInfo.size}
+                    Pacote de Fralda {diaperInfo.size}
                   </div>
                   <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2 }}>
                     Pampers ou Huggies
@@ -257,10 +257,10 @@ function RSVPPage({ onDone }) {
                 <span style={{ fontSize: 26 }}>💧</span>
                 <div style={{ textAlign: "left" }}>
                   <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
-                    Pacote de lenço umedecido
+                    Pacote de Lenço Umedecido
                   </div>
                   <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2 }}>
-                    Huggies ou Pampers
+                    Pampers ou Huggies
                   </div>
                 </div>
               </div>
@@ -269,7 +269,7 @@ function RSVPPage({ onDone }) {
         )}
 
         <div style={S.addressBox}>
-          <p style={S.addressLabel}>📍 Local da festa</p>
+          <p style={S.addressLabel}>📍 Local</p>
           <p style={{ margin:"0 0 6px", color:PALETTE.textMuted, fontSize:14, fontWeight:500, lineHeight:1.5, fontFamily:"'Inter',sans-serif" }}>
             {PARTY_ADDRESS}
           </p>
