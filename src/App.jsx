@@ -294,7 +294,7 @@ function RSVPPage({ onDone }) {
         <div style={{ fontSize:42, marginBottom:8 }}>🤍</div>
         <h2 style={{ ...S.cardTitle, fontFamily:"'Inter',sans-serif" }}>Vamos sentir sua falta, {firstName}!</h2>
         <p style={{ ...S.cardText, fontFamily:"'Inter',sans-serif" }}>
-          Entendemos perfeitamente. Saiba que você estará em nossos pensamentos nesse dia tão especial. 💛<br/><br/>
+          Entendemos perfeitamente. Saiba que você estará em nossos pensamentos nesse dia tão especial. 🤎<br/><br/>
           Com carinho, obrigado por nos avisar!
         </p>
         <button style={S.btnOutline} onClick={onDone}>← Voltar ao convite</button>
@@ -305,7 +305,7 @@ function RSVPPage({ onDone }) {
   if (step === "already") return (
     <div style={S.rsvpPage}>
       <div className="fadeIn" style={S.card}>
-        <div style={{ fontSize:42, marginBottom:8 }}>💛</div>
+        <div style={{ fontSize:42, marginBottom:8 }}>🩵</div>
         <h2 style={{ ...S.cardTitle, fontFamily:"'Inter',sans-serif" }}>Você já confirmou!</h2>
         <p style={{ ...S.cardText, fontFamily:"'Inter',sans-serif" }}>Seu nome já está na nossa lista. Até lá! 🌿</p>
         <button style={S.btnOutline} onClick={onDone}>← Voltar</button>
