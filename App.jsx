@@ -4,7 +4,7 @@ import { supabase } from "./lib/supabase";
 /* ─────────────────────────────────────────────
    🎨 PALETA (Papel de Algodão & Editorial Moderno)
 ───────────────────────────────────────────── */
-const PALETTE = { 
+const PALETTE = {
   bgCotton:  "#F4F1EA",
   cardPaper: "#F9F8F5",
   archGold:  "#D4C5B9",
@@ -226,7 +226,7 @@ function RSVPPage({ onDone }) {
           Mal podemos esperar para te ver por aqui! 🩵
         </p>
 
-{diaperInfo && (
+        {diaperInfo && (
           <div style={S.diaperBox}>
             <p style={{ ...S.diaperLabel, textAlign: "center" }}>🧸 Sugestão de Presentes 🎁</p>
             <p style={{ ...S.cardText, margin:"0 0 12px", fontSize:13, textAlign: "center" }}>
@@ -241,14 +241,16 @@ function RSVPPage({ onDone }) {
                   <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
                     Pacote de Fralda {diaperInfo.size}
                   </div>
-                  <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2 }}>
-                    Pampers ou Huggies
+                  <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2, lineHeight: 1.4 }}>
+                    Pampers (Premium Care / Conform Sec)<br />
+                    ou<br />
+                    Huggies (Natural Care / Pants)
                   </div>
                 </div>
               </div>
 
               {/* Indicador de Soma Centralizado */}
-              <div style={{ width: "100%", textAlign: "center", margin: "4px 0", color: PALETTE.textGold, fontWeight: "bold", fontSize: 18 }}>
+              <div style={{ width: "100%", textAlign: "center", margin: "6px 0", color: PALETTE.textGold, fontWeight: "bold", fontSize: 18 }}>
                 +
               </div>
 
@@ -257,7 +259,7 @@ function RSVPPage({ onDone }) {
                 <span style={{ fontSize: 26 }}>💧</span>
                 <div style={{ textAlign: "left" }}>
                   <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
-                    Pacote de Lenço Umedecido
+                    Pacote de Lenço Umedecido (Sem fragrância)
                   </div>
                   <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2 }}>
                     Pampers ou Huggies
