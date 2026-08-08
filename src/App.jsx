@@ -241,15 +241,15 @@ function RSVPPage({ onDone }) {
                   Pacote de Fralda {diaperInfo.size}
                 </div>
                 <div style={{ fontSize:12, color:PALETTE.leafGreen, fontWeight:600, marginTop:5, lineHeight:1.7 }}>
-                  Pampers — Premium Care ou Confort Sec<br/>
+                  Pampers: Premium Care ou Confort Sec<br/>
                   <span style={{ color:PALETTE.textGold, fontSize:11 }}>ou</span><br/>
-                  Huggies — Natural Care ou Pants
+                  Huggies: Natural Care ou Pants
                 </div>
               </div>
 
               {/* Separador + */}
-              <div style={{ width:"80%", borderTop:`1px dashed ${PALETTE.archGold}`, margin:"0 auto 10px", position:"relative" }}>
-                <span style={{ position:"absolute", top:-11, left:"50%", transform:"translateX(-50%)", background:"white", padding:"0 8px", color:PALETTE.textGold, fontWeight:"bold", fontSize:18 }}>+</span>
+              <div style={{ width:"100%", textAlign:"center", margin:"8px 0 14px", color:PALETTE.textGold, fontWeight:"bold", fontSize:22 }}>
+                +
               </div>
 
               {/* Item 2 — Lenço */}
