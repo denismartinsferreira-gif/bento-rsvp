@@ -234,36 +234,32 @@ function RSVPPage({ onDone }) {
             </p>
             
             <div style={S.diaperCard}>
-              {/* Item 1: Fralda */}
-              <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
-                <span style={{ fontSize: 26 }}>☁️</span>
-                <div style={{ textAlign: "left" }}>
-                  <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
-                    Pacote de Fralda {diaperInfo.size}
-                  </div>
-                  <div style={{ fontSize: 11.5, color: PALETTE.leafGreen, fontWeight: 600, marginTop: 2, lineHeight: 1.4 }}>
-                    Pampers (Premium Care / Conform Sec)
-                    <div style={{ textAlign: "center", margin: "2px 0" }}>ou</div>
-                    Huggies (Natural Care / Pants)
-                  </div>
+              {/* Item 1 — Fralda */}
+              <div style={{ display:"flex", flexDirection:"column", alignItems:"center", width:"100%", textAlign:"center", paddingBottom:10 }}>
+                <span style={{ fontSize:28, marginBottom:6 }}>☁️</span>
+                <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
+                  Pacote de Fralda {diaperInfo.size}
+                </div>
+                <div style={{ fontSize:12, color:PALETTE.leafGreen, fontWeight:600, marginTop:5, lineHeight:1.7 }}>
+                  Pampers — Premium Care ou Confort Sec<br/>
+                  <span style={{ color:PALETTE.textGold, fontSize:11 }}>ou</span><br/>
+                  Huggies — Natural Care ou Pants
                 </div>
               </div>
 
-              {/* Indicador de Soma Centralizado */}
-              <div style={{ width: "100%", textAlign: "center", margin: "6px 0", color: PALETTE.textGold, fontWeight: "bold", fontSize: 18 }}>
-                +
+              {/* Separador + */}
+              <div style={{ width:"80%", borderTop:`1px dashed ${PALETTE.archGold}`, margin:"0 auto 10px", position:"relative" }}>
+                <span style={{ position:"absolute", top:-11, left:"50%", transform:"translateX(-50%)", background:"white", padding:"0 8px", color:PALETTE.textGold, fontWeight:"bold", fontSize:18 }}>+</span>
               </div>
 
-              {/* Item 2: Lenço Umedecido */}
-              <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
-                <span style={{ fontSize: 26 }}>💧</span>
-                <div style={{ textAlign: "left" }}>
-                  <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
-                    Pacote de Lenço Umedecido (Sem fragrância)
-                  </div>
-                  <div style={{ fontSize:11.5, color:PALETTE.leafGreen, fontWeight:600, marginTop:2 }}>
-                    Pampers ou Huggies
-                  </div>
+              {/* Item 2 — Lenço */}
+              <div style={{ display:"flex", flexDirection:"column", alignItems:"center", width:"100%", textAlign:"center", paddingTop:4 }}>
+                <span style={{ fontSize:28, marginBottom:6 }}>💧</span>
+                <div style={{ fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:17, color:PALETTE.textGreen, lineHeight:1.2 }}>
+                  Pacote de Lenço Umedecido
+                </div>
+                <div style={{ fontSize:12, color:PALETTE.leafGreen, fontWeight:600, marginTop:5 }}>
+                  Sem Fragrância
                 </div>
               </div>
             </div>
@@ -726,7 +722,7 @@ const S = {
   cardText:    { color:PALETTE.textMuted, fontSize:14, lineHeight:1.7, margin:"0 0 16px" },
   diaperBox:   { background:PALETTE.lightSage, borderRadius:12, padding:"16px 18px", marginBottom:16, textAlign:"left", border:`1px solid ${PALETTE.leafGreen}25` },
   diaperLabel: { margin:"0 0 6px", fontWeight:600, color:PALETTE.textGreen, fontSize:13, letterSpacing:0.5, fontFamily:"'Inter',sans-serif" },
-  diaperCard:  { background:"white", borderRadius:10, padding:"12px 14px", display:"flex", flexDirection:"column", alignItems:"flex-start", gap:6 },
+  diaperCard:  { background:"white", borderRadius:10, padding:"16px 14px", display:"flex", flexDirection:"column", alignItems:"center", gap:0 },
   addressBox:  { background:"white", borderRadius:12, padding:"14px 16px", marginBottom:16, border:`1px dashed ${PALETTE.archGold}`, textAlign:"left" },
   addressLabel:{ margin:"0 0 6px", fontWeight:600, color:PALETTE.textGreen, fontSize:11, letterSpacing:1, textTransform:"uppercase", fontFamily:"'Inter',sans-serif" },
   label:       { display:"block", textAlign:"left", fontSize:11, fontWeight:600, color:PALETTE.textGreen, letterSpacing:1, textTransform:"uppercase", marginBottom:6, fontFamily:"'Inter',sans-serif" },
